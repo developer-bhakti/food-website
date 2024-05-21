@@ -12,34 +12,59 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <nav class="navbar">
       <div class="navbar-container container">
-          <input type="checkbox" name="" id="">
-          <div class="hamburger-lines">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
-          </div>
-          <ul class="menu-items">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#food-menu">Menu</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <!-- <li><a href="#testimonials">Testimonial</a></li> -->
-              <!-- <li><a href="#food">Category</a></li> -->
-          </ul>
-          <h1 class="logo"></h1>
+        <input type="checkbox" name="" id="" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <ul class="menu-items">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#food-menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <!-- <li><a href="#testimonials">Testimonial</a></li> -->
+          <!-- <li><a href="#food">Category</a></li> -->
+        </ul>
+        <h1 class="logo"></h1>
       </div>
-  </nav>
-     <section class="showcase-area" id="showcase">
+    </nav>
+
+    <!-- <section class="showcase-area" id="showcase">
       <div class="showcase-container">
         <h1 class="main-title" id="home">Eat Right Food</h1>
         <p>Eat Healty, it is good for our health.</p>
         <a href="#food-menu" class="btn btn-primary">Menu</a>
       </div>
-    </section>
+    </section> -->
+
+    <div class="showcase-area" id="showcase">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide_1">
+            <img src="./Assets/SliderImg/img1.jpg" alt="imglogo" />
+          </div>
+          <div class="swiper-slide slide_2">
+            <img src="./Assets/SliderImg/img2.jpg" alt="imglogo" />
+          </div>
+          <div class="swiper-slide slide_3">
+            <img src="./Assets/SliderImg/img3.jpg" alt="imglogo" />
+          </div>
+          <div class="swiper-slide slide_4">
+            <img src="./Assets/SliderImg/img4.jpg" alt="imglogo" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
 
     <section id="about">
       <div class="about-wrapper container">
@@ -47,7 +72,16 @@
           <p class="small">About Us</p>
           <h2>We've beem making healthy food last for 10 years</h2>
           <p>
-            Welcome to Sunny Restaurant, where good food meets great vibes! Located in the heart of town, our cozy café is the perfect spot to kick back and enjoy delicious, homemade meals made with love. From fluffy pancakes to juicy burgers, our menu has something for everyone, including vegetarian and gluten-free options. Whether you're catching up with friends over brunch or grabbing a quick bite on the go, our friendly staff and laid-back atmosphere make every visit a delight. So come on in, take a seat, and let us treat you to a taste of happiness at Sunny Restaurant!</p>
+            Welcome to Sunny Restaurant, where good food meets great vibes!
+            Located in the heart of town, our cozy café is the perfect spot to
+            kick back and enjoy delicious, homemade meals made with love. From
+            fluffy pancakes to juicy burgers, our menu has something for
+            everyone, including vegetarian and gluten-free options. Whether
+            you're catching up with friends over brunch or grabbing a quick bite
+            on the go, our friendly staff and laid-back atmosphere make every
+            visit a delight. So come on in, take a seat, and let us treat you to
+            a taste of happiness at Sunny Restaurant!
+          </p>
         </div>
         <div class="about-img">
           <img src="./Assets/img/restaurant main.webp" alt="food" />
@@ -106,78 +140,209 @@
       <div class="food-menu-container container">
         <div class="food-menu-item">
           <div class="food-img">
-            <img src="./Assets/img/burger 1.webp" alt="" />
+            <img src="./Assets/img/paneer_bhurji.jpeg" alt="" />
           </div>
           <div class="food-description">
-            <h2 class="food-titile">Burger</h2>
-            <p>
-                Feast your eyes on perfection between two buns.
-            </p>
-            <p class="food-price">Price: &#8377; 250</p>
+            <h2 class="food-titile">Panner Bhurji</h2>
+            <p>Feast your eyes on perfection between two buns.</p>
+            <p class="food-price">Price: &#8377; 180</p>
           </div>
         </div>
 
         <div class="food-menu-item">
           <div class="food-img">
-            <img
-              src="./Assets/img/pasta 2.jpeg"
-              alt="error"
-            />
+            <img src="./Assets/img/paneer_tikka_masala.jpg" alt="error" />
           </div>
           <div class="food-description">
-            <h2 class="food-titile">pasta</h2>
-            <p>
-                Indulge in a symphony of flavors, twirled to perfection
-            </p>
-            <p class="food-price">Price: &#8377; 250</p>
+            <h2 class="food-titile">paneer Batter Masala</h2>
+            <p>Indulge in a symphony of flavors, twirled to perfection</p>
+            <p class="food-price">Price: &#8377; 160</p>
           </div>
         </div>
         <div class="food-menu-item">
           <div class="food-img">
-            <img src="./Assets/img/nudels 3.jpeg" alt="" />
+            <img src="./Assets/img/Paneer-Tikka-Masala.jpg" alt="" />
           </div>
           <div class="food-description">
-            <h2 class="food-titile">Noodules</h2>
-            <p>
-                where simplicity meets satisfaction
-            </p>
-            <p class="food-price">Price: &#8377; 250</p>
+            <h2 class="food-titile">Paneer Tikka Masala</h2>
+            <p>where simplicity meets satisfaction</p>
+            <p class="food-price">Price: &#8377; 150</p>
           </div>
         </div>
         <div class="food-menu-item">
           <div class="food-img">
-            <img src="./Assets/img/pizza 4.jpg" alt="" />
+            <img src="./Assets/img/paneer-kofta.jpg" alt="" />
           </div>
           <div class="food-description">
-            <h2 class="food-titile">pizza</h2>
-            <p>
-                Slice into happiness with every bite of pizza perfection
-            </p>
-            <p class="food-price">Price: &#8377; 250</p>
+            <h2 class="food-titile">paneer Kofta</h2>
+            <p>Slice into happiness with every bite of pizza perfection</p>
+            <p class="food-price">Price: &#8377; 180</p>
           </div>
         </div>
         <div class="food-menu-item">
           <div class="food-img">
-            <img src="./Assets/img/frise 5.jpg" alt="" />
+            <img src="./Assets/img/veg kofta.jpeg" alt="" />
           </div>
           <div class="food-description">
-            <h2 class="food-titile">French Fries</h2>
-            <p>
-                French fries at their finest
-            </p>
-            <p class="food-price">Price: &#8377; 250</p>
+            <h2 class="food-titile">Veg Kofta</h2>
+            <p>French fries at their finest</p>
+            <p class="food-price">Price: &#8377; 170</p>
           </div>
         </div>
         <div class="food-menu-item">
           <div class="food-img">
-            <img src="./Assets/img/donot 6.jpg" alt="" />
+            <img src="./Assets/img/palak-paneer 6.webp" alt="" />
           </div>
           <div class="food-description">
-            <h2 class="food-titile">Donate</h2>
+            <h2 class="food-titile">Palak Paneer</h2>
             <p>
-                Do not underestimate the power of a deliciously satisfying treat
+              Do not underestimate the power of a deliciously satisfying treat
             </p>
-            <p class="food-price">Price: &#8377; 250</p>
+            <p class="food-price">Price: &#8377; 150</p>
+          </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="./Assets/img/matter paneer 7.jpeg" alt="" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile">Matter Paneer</h2>
+            <p>
+              Do not underestimate the power of a deliciously satisfying treat
+            </p>
+            <p class="food-price">Price: &#8377; 150</p>
+          </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="./Assets/img/kaju masala 8.jpeg" alt="" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile">Kaju Masala</h2>
+            <p>
+              Do not underestimate the power of a deliciously satisfying treat
+            </p>
+            <p class="food-price">Price: &#8377; 160</p>
+          </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="./Assets/img/kaju kari 9.webp" alt="" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile">Kaju Kari</h2>
+            <p>
+              Do not underestimate the power of a deliciously satisfying treat
+            </p>
+            <p class="food-price">Price: &#8377; 150</p>
+          </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="./Assets/img/dam_alu 10.jpeg" alt="" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile">Dam alu</h2>
+            <p>
+              Do not underestimate the power of a deliciously satisfying treat
+            </p>
+            <p class="food-price">Price: &#8377; 130</p>
+          </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="./Assets/img/dam-ali-kashmiri 11.jpg" alt="" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile">Dam Alu Kashmiri</h2>
+            <p>
+              Do not underestimate the power of a deliciously satisfying treat
+            </p>
+            <p class="food-price">Price: &#8377; 150</p>
+          </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="./Assets/img/malai-kofta 11.jpeg" alt="" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile">Malai Kofta</h2>
+            <p>
+              Do not underestimate the power of a deliciously satisfying treat
+            </p>
+            <p class="food-price">Price: &#8377; 180</p>
+          </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="./Assets/img/mashroom-masala 12.jpg" alt="" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile">Mashroom Masala</h2>
+            <p>
+              Do not underestimate the power of a deliciously satisfying treat
+            </p>
+            <p class="food-price">Price: &#8377; 130</p>
+          </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="./Assets/img/akkha masur 12.jpeg" alt="" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile">Akkha Masur</h2>
+            <p>
+              Do not underestimate the power of a deliciously satisfying treat
+            </p>
+            <p class="food-price">Price: &#8377; 120</p>
+          </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="./Assets/img/paneer_angara 13.avif" alt="" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile">Paneer angara</h2>
+            <p>
+              Do not underestimate the power of a deliciously satisfying treat
+            </p>
+            <p class="food-price">Price: &#8377; 200</p>
+          </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="./Assets/img/veg angara 13.jpeg" alt="" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile">Veg Angara</h2>
+            <p>
+              Do not underestimate the power of a deliciously satisfying treat
+            </p>
+            <p class="food-price">Price: &#8377; 180</p>
+          </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="./Assets/img/paneer-tufani 14.jpeg" alt="" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile">Paneer Tufani</h2>
+            <p>
+              Do not underestimate the power of a deliciously satisfying treat
+            </p>
+            <p class="food-price">Price: &#8377; 220</p>
+          </div>
+        </div>
+        <div class="food-menu-item">
+          <div class="food-img">
+            <img src="./Assets/img/Tamatar-chatni.jpg" alt="" />
+          </div>
+          <div class="food-description">
+            <h2 class="food-titile">Tamater Chatni</h2>
+            <p>
+              Do not underestimate the power of a deliciously satisfying treat
+            </p>
+            <p class="food-price">Price: &#8377; 100</p>
           </div>
         </div>
       </div>
@@ -203,7 +368,6 @@
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
             voluptas cupiditate aspernatur odit doloribus non.
           </p>
-         
         </div>
         <div class="testimonial-box">
           <div class="customer-detail">
@@ -226,7 +390,6 @@
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
             voluptas cupiditate aspernatur odit doloribus non.
           </p>
-         
         </div>
         <div class="testimonial-box">
           <div class="customer-detail">
@@ -246,7 +409,6 @@
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
             voluptas cupiditate aspernatur odit doloribus non.
           </p>
-         
         </div>
       </div>
     </section>
@@ -277,7 +439,15 @@
     .................../ JS Code for smooth scrolling /...................... -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   <script>
+    let swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+
     $(document).ready(function () {
       // Add smooth scrolling to all links
       $("a").on("click", function (event) {
